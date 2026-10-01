@@ -1,0 +1,58 @@
+[theme]
+base = "light"
+primaryColor = "#187E73"
+backgroundColor = "#F7F9F8"
+secondaryBackgroundColor = "#EEF3F1"
+textColor = "#1C2D29"
+borderColor = "#D8E2DE"
+dataframeHeaderBackgroundColor = "#EAF0ED"
+dataframeBorderColor = "#D8E2DE"
+font = "'IBM Plex Sans':https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+headingFont = "'IBM Plex Sans':https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&display=swap"
+codeFont = "'IBM Plex Mono':https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+baseRadius = "small"
+buttonRadius = "small"
+showSidebarBorder = true
+chartCategoricalColors = ["#187E73", "#C87845", "#46789A", "#A95858", "#B39436", "#637A73"]
+
+[theme.sidebar]
+backgroundColor = "#EEF3F1"
+secondaryBackgroundColor = "#E5EDE9"
+textColor = "#1C2D29"
+primaryColor = "#187E73"
+borderColor = "#D8E2DE"
+
+[theme.light]
+primaryColor = "#187E73"
+backgroundColor = "#F7F9F8"
+secondaryBackgroundColor = "#EEF3F1"
+textColor = "#1C2D29"
+borderColor = "#D8E2DE"
+dataframeHeaderBackgroundColor = "#EAF0ED"
+dataframeBorderColor = "#D8E2DE"
+chartCategoricalColors = ["#187E73", "#C87845", "#46789A", "#A95858", "#B39436", "#637A73"]
+
+[theme.light.sidebar]
+backgroundColor = "#EEF3F1"
+secondaryBackgroundColor = "#E5EDE9"
+textColor = "#1C2D29"
+primaryColor = "#187E73"
+borderColor = "#D8E2DE"
+
+[theme.dark]
+primaryColor = "#0E766C"
+backgroundColor = "#121B1A"
+secondaryBackgroundColor = "#1C2926"
+textColor = "#E8F0ED"
+borderColor = "#33433E"
+dataframeHeaderBackgroundColor = "#263631"
+dataframeBorderColor = "#33433E"
+codeBackgroundColor = "#1C2926"
+chartCategoricalColors = ["#59C7B5", "#E39A69", "#78A8C8", "#D17C7C", "#D9BD64", "#9DAFA8"]
+
+[theme.dark.sidebar]
+backgroundColor = "#172320"
+secondaryBackgroundColor = "#202E2A"
+textColor = "#E8F0ED"
+primaryColor = "#0E766C"
+borderColor = "#33433E"

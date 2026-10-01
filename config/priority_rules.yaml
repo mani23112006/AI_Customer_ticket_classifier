@@ -1,0 +1,42 @@
+# Rule-based priority engine config (separate from the ML model).
+# Evaluation order: high_priority_rules (first match wins) -> medium_categories -> default_priority.
+# Patterns are Python regexes, matched case-insensitively against "subject + message".
+# Limitation: rules are keyword-based, so misspelled trigger words (e.g. "hackd") will not match.
+
+high_priority_rules:
+  - id: fraud
+    description: Mentions fraud
+    patterns:
+      - '\bfraud\w*'
+  - id: unauthorized
+    description: Mentions unauthorized activity
+    patterns:
+      - '\bunauthori[sz]ed\b'
+  - id: hacked
+    description: Mentions hacking
+    patterns:
+      - '\bhack(ed|ing|er|ers)?\b'
+  - id: account_compromised
+    description: Account compromised or breached
+    patterns:
+      - '\baccount\b[^.!?]{0,30}\b(compromised|breached)\b'
+      - '\b(compromised|breached)\b[^.!?]{0,20}\baccount\b'
+      - '\bdata\s+breach\b'
+  - id: stolen
+    description: Something was stolen
+    patterns:
+      - '\b(stolen|stole|steal|stealing)\b'
+  - id: money_deducted
+    description: Money, payment or amount deducted
+    patterns:
+      - '\b(money|payment|amount)\b[^.!?]{0,40}\bdeducted\b'
+      - '\bdeducted\b[^.!?]{0,40}\b(money|payment|amount)\b'
+
+medium_categories:
+  - Payment
+  - Refund
+  - Technical
+  - Account
+  - Delivery
+
+default_priority: Low

@@ -1,0 +1,75 @@
+# Suggested replies. Placeholders: {customer_name}, {ticket_no}
+# Agents can edit the suggestion before it is used.
+
+templates:
+  Payment: |
+    Hello {customer_name},
+
+    Thank you for contacting us about your billing concern (ticket {ticket_no}).
+    We are reviewing the charges on your account and will get back to you with details shortly.
+
+    Regards,
+    Support Team
+  Technical: |
+    Hello {customer_name},
+
+    Thanks for reporting this technical issue (ticket {ticket_no}).
+    Our technical team is looking into it. If you have screenshots or error messages, please reply with them.
+
+    Regards,
+    Support Team
+  Account: |
+    Hello {customer_name},
+
+    We have received your account request (ticket {ticket_no}).
+    For your security, we may need to verify your identity before making any changes.
+
+    Regards,
+    Support Team
+  Refund: |
+    Hello {customer_name},
+
+    We are sorry for the trouble. Your refund request (ticket {ticket_no}) is being reviewed,
+    and we will update you as soon as a decision has been made.
+
+    Regards,
+    Support Team
+  Delivery: |
+    Hello {customer_name},
+
+    Thank you for reaching out about your delivery (ticket {ticket_no}).
+    We are checking its status with our logistics partner and will update you soon.
+
+    Regards,
+    Support Team
+  Subscription: |
+    Hello {customer_name},
+
+    We have received your cancellation request (ticket {ticket_no}).
+    We will confirm the cancellation and any next steps shortly.
+
+    Regards,
+    Support Team
+  General: |
+    Hello {customer_name},
+
+    Thank you for contacting us (ticket {ticket_no}).
+    We have received your query and will respond as soon as possible.
+
+    Regards,
+    Support Team
+  Other: |
+    Hello {customer_name},
+
+    We have received your request (ticket {ticket_no}). Our team will review the details and follow up shortly.
+
+    Regards,
+    Support Team
+
+fallback: |
+  Hello {customer_name},
+
+  Thank you for contacting us (ticket {ticket_no}). Our team will review your request shortly.
+
+  Regards,
+  Support Team
